@@ -1,0 +1,8 @@
+{
+  "name": "Carbs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "a0a7018c"
+}

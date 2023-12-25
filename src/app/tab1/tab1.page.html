@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <img alt="logo" height="40" src="assets/carbs.png">
+    </ion-title>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Ingresa el alimento" (ionChange)="letsSearch($event)"></ion-searchbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-explore-container name="Carbs"></app-explore-container>
+</ion-content>

@@ -1,0 +1,17 @@
+
+<ion-content fullscreen>
+
+    <ion-list>
+        <ion-item button *ngFor="let prod of this.carbsService.getProducts();let i = index" (click)="openModal(prod)">
+            <ion-thumbnail slot="start">
+                <img src="https://searchurl/img/food/p_{{prod['id_alimento']}}.png" onerror="this.src='https:\//\//searchurl\/img\/logo.png';" >
+            </ion-thumbnail>
+            <ion-label>
+                <h2>{{prod["nombre"]}} <span *ngIf="prod['medida'] !== ''">- {{prod["medida"]}}</span></h2>
+                <p><b>Carbohidratos: {{prod["carbs"]}}</b></p>
+                <p>Calor&#237;as: {{prod["calorias"]}} | Prote&#237;nas: {{prod["proteinas"]}} | L&#237;pidos: {{prod["lipidos"]}}</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{food['nombre']}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label><b>Cantidad: {{food['medida']}}</b></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label><b>Carbohidratos: {{food['carbs']}}</b></ion-label>
+  </ion-item>
+  <hr />
+  <ion-item>
+    <ion-label>Calorías: {{food['calorias']}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Proteínas: {{food['proteinas']}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Lípidos: {{food['lipidos']}}</ion-label>
+  </ion-item>
+  <ion-button expand="block" (click)="dismissModal()" class="ion-margin-top">Cerrar</ion-button>
+</ion-content>
+
